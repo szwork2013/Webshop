@@ -1,0 +1,46 @@
+html,body{
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+    font-family: 
+}
+
+html,body,div,h1,h2,h3,h4,h5,h6,p,ul,li,input{
+    margin: 0;
+    padding: 0;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a { text-decoration: none; color: #666; }
+a:hover { text-decoration: none; }
+
+.container{
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*公用部分*/
+
+/* 顶部 */
+.shortcut{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #F1F1F1;
+    
+}
+.shortcut ul{
+    width: 198px;
+    float: right;
+}
+.shortcut ul li{
+    padding-right: 10px;
+    float: left;
+}
+.shortcut li a:hover{
+    color: #C81623;
+}
