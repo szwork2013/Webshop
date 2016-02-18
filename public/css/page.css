@@ -1,0 +1,40 @@
+.layout{
+    
+}
+.layout-img{
+    width: 540px;
+    height: 410px;
+    background: red;
+}
+.pro-price{
+    width: 630px;
+    overflow: hidden;
+}
+.pro-price h1{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #333;
+}
+.pro-price h3{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #e01d20;
+}
+.pro-price p{
+    padding-left: 10px;
+    padding-top: 20px;
+    color: #333;
+}
+.pro-price p b{
+    font-size: 24px;
+    color: #e01d20;
+}
+.pro-btn{
+    display: block;
+    width: 188px;
+    height:40px;
+    background-color: #E01D20;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}

@@ -7,14 +7,424 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
+      <!--top-->
     <div class="shortcut">
         <div class="container">
-            <ul>
-                <li><a href="">你好，请登陆</a></li>
-                <li><a href="">免费注册</a></li>
-                <li><a href="">我的订单</a></li>
+            <ul class="pull-left">
+                <li><a href="javascript:;">欢迎光临Shop!</a></li>
+            </ul>
+            <ul class="pull-right">
+                <li><a href="#">你好，请登陆</a></li>
+                <li><a href="#">免费注册</a></li>
+                <li><a href="#">我的订单</a></li>
             </ul>
         </div>
     </div>
+    <div class="container">
+        <div class="logo pull-left">
+            <a href="/">Shop <span>node-express</span></a>
+        </div>
+        <div class="search pull-left">
+            <input class="pull-left" type="search">
+            <button class="pull-left">搜索</button>
+        </div>
+        <div class="settleup pull-right">
+            <div class="cw block-center">
+                <a class="text-center">我的购物车</a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <!--导航-->
+    <div class="nav">
+        <div class="container">
+            <div class="categorys">
+                <a href="">全部商品分类</a>
+            </div>
+            <div class="navitems">
+                <ul>
+                    <li><a href="#">服装城</a></li>
+                    <li><a href="#">美妆馆</a></li>
+                    <li><a href="#">超市</a></li>
+                    <li><a href="#">全球购</a></li>
+                    <li><a href="#">闪购</a></li>
+                    <li><a href="#">团购</a></li>
+                    <li><a href="#">拍卖</a></li>
+                </ul>
+            </div>
+            <div class="dorpdown-layer pull-left">
+                <div class="item fore1">
+                    <h3><a href="#">家用电器</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">手机、数码、通信</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">电脑、办公</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">家居、家具、家装</a></h3>
+                    <i>></i>
+                </div> 
+                <div class="item fore1">
+                    <h3><a href="#">男装、女装、内衣</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">个护化妆、清洁用品</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">鞋靴、箱包、钟表</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">运动户外</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">汽车、汽车用品</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">母婴、玩具乐器</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">食品、酒类、生鲜</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">营养保健</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">图书、音像、电子书</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">彩票、旅行、充值</a></h3>
+                    <i>></i>
+                </div>
+                <div class="item fore1">
+                    <h3><a href="#">理财、众筹、白条</a></h3>
+                    <i>></i>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">生活电器
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">取暖电器</a></li>
+                            <li><a href="#">取暖电器</a></li>
+                            <li><a href="#">取暖电器</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">手机通讯
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">苹果</a></li>
+                            <li><a href="#">三星</a></li>
+                            <li><a href="#">小米</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">电脑整机
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">超级本</a></li>
+                            <li><a href="#">笔记本</a></li>
+                            <li><a href="#">台式机</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">家具
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">卧室家具</a></li>
+                            <li><a href="#">客厅家具</a></li>
+                            <li><a href="#">书房家具</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">男装
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">羽绒服</a></li>
+                            <li><a href="#">棉裤</a></li>
+                            <li><a href="#">卫衣</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">面部护肤
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">清洁</a></li>
+                            <li><a href="#">护肤</a></li>
+                            <li><a href="#">面膜</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">男鞋
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">休闲鞋</a></li>
+                            <li><a href="#">皮鞋</a></li>
+                            <li><a href="#">运动鞋</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">运动户外
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">跑步鞋</a></li>
+                            <li><a href="#">篮球鞋</a></li>
+                            <li><a href="#">足球鞋</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">汽车车型
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">微型车</a></li>
+                            <li><a href="#">小型车</a></li>
+                            <li><a href="#">中型车</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">奶粉
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">婴幼奶粉</a></li>
+                            <li><a href="#">成人奶粉</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">进口食品
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">牛奶</a></li>
+                            <li><a href="#">饼干</a></li>
+                            <li><a href="#">巧克力</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">营养健康
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">调节免疫</a></li>
+                            <li><a href="#">调节三高</a></li>
+                            <li><a href="#">缓解疲劳</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">音像
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">音乐</a></li>
+                            <li><a href="#">影视</a></li>
+                            <li><a href="#">教育图像</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">彩票
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">双色球</a></li>
+                            <li><a href="#">福彩3D</a></li>
+                            <li><a href="#">七乐彩</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item-brands pull-left">
+                <div class="brands-inner">
+                    <div class="fore">
+                        <h4 class="pull-left">理财
+                            <i>></i>
+                        </h4>
+                        <ul class="pull-left">
+                            <li><a href="#">众筹</a></li>
+                            <li><a href="#">钱包</a></li>
+                            <li><a href="#">公益</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slider pull-right">
+                <ul>
+                    <li>
+                        <img src="images/1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/3.jpg" alt="">
+                    </li>
+                </ul>
+                <span>
+                    <a class="active" href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!--商品-->
+    <div class="clearfix"></div>
+    <div class="tab">
+        <div class="container">
+            <ul>
+                <li><a class="active" href="">热门</a></li>
+                <li><a href="">新品</a></li>
+                <li><a href="">性价比</a></li>
+            </ul>
+            
+            <div class="tabs-item1 active">
+                <div class="tabs">
+                    <img src="images/4.jpg" alt="">
+                    <p><a href="#">妙凡iphone6s手机壳4.7苹果6S手机壳6P保护套i6防摔透明女硅胶软</a></p>
+                    <p class="tabs-price">优惠价 <em>￥10.00</em></p>
+                </div>
+                <div class="tabs">
+                    <img src="images/4.jpg" alt="">
+                    <p><a href="#">妙凡iphone6s手机壳4.7苹果6S手机壳6P保护套i6防摔透明女硅胶软</a></p>
+                    <p class="tabs-price">优惠价 <em>￥10.00</em></p>
+                </div>
+                <div class="tabs">
+                    <img src="images/4.jpg" alt="">
+                    <p><a href="#">妙凡iphone6s手机壳4.7苹果6S手机壳6P保护套i6防摔透明女硅胶软</a></p>
+                    <p class="tabs-price">优惠价 <em>￥10.00</em></p>
+                </div>
+            </div>
+            
+            <div class="tabs-item1">
+                <div class="tabs">
+                    <img src="images/4.jpg" alt="">
+                    <p><a href="#">妙凡iphone6s手机壳4.7苹果6S手机壳6P保护套i6防摔透明女硅胶软</a></p>
+                    <p class="tabs-price">优惠价 <em>￥220.00</em></p>
+                </div>
+                <div class="tabs">
+                    <img src="images/4.jpg" alt="">
+                    <p><a href="#">妙凡iphone6s手机壳4.7苹果6S手机壳6P保护套i6防摔透明女硅胶软</a></p>
+                    <p class="tabs-price">优惠价 <em>￥220.00</em></p>
+                </div>
+                <div class="tabs">
+                    <img src="images/4.jpg" alt="">
+                    <p><a href="#">妙凡iphone6s手机壳4.7苹果6S手机壳6P保护套i6防摔透明女硅胶软</a></p>
+                    <p class="tabs-price">优惠价 <em>￥220.00</em></p>
+                </div>
+            </div>
+            
+            <div class="tabs-item1">
+                <div class="tabs">
+                    <img src="images/4.jpg" alt="">
+                    <p><a href="#">妙凡iphone6s手机壳4.7苹果6S手机壳6P保护套i6防摔透明女硅胶软</a></p>
+                    <p class="tabs-price">优惠价 <em>￥330.00</em></p>
+                </div>
+                <div class="tabs">
+                    <img src="images/4.jpg" alt="">
+                    <p><a href="#">妙凡iphone6s手机壳4.7苹果6S手机壳6P保护套i6防摔透明女硅胶软</a></p>
+                    <p class="tabs-price">优惠价 <em>￥330.00</em></p>
+                </div>
+                <div class="tabs">
+                    <img src="images/4.jpg" alt="">
+                    <p><a href="#">妙凡iphone6s手机壳4.7苹果6S手机壳6P保护套i6防摔透明女硅胶软</a></p>
+                    <p class="tabs-price">优惠价 <em>￥330.00</em></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--底部-->
+    <div class="footer">
+        <div class="container">
+            <img src="images/footer.jpg" alt="">
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p class="text-center">Copyright © 2016</p>
+        </div>
+    </footer>
+    <div class="trigger">
+        顶部
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,6 +1,5 @@
 html,body{
     font: 12px/150% Arial,Verdana,"\5b8b\4f53";
-    font-family: 
 }
 
 html,body,div,h1,h2,h3,h4,h5,h6,p,ul,li,input{
@@ -16,11 +15,32 @@ a { text-decoration: none; color: #666; }
 a:hover { text-decoration: none; }
 
 .container{
+    position: relative;
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.pull-left{
+    float: left;
+}
+
+.pull-right{
+    float: right;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.block-center{
+    margin: 0 auto;
 }
 
 /*公用部分*/
@@ -35,7 +55,6 @@ a:hover { text-decoration: none; }
 }
 .shortcut ul{
     width: 198px;
-    float: right;
 }
 .shortcut ul li{
     padding-right: 10px;
@@ -43,4 +62,142 @@ a:hover { text-decoration: none; }
 }
 .shortcut li a:hover{
     color: #C81623;
+}
+
+.logo{
+    width: 270px;
+    height: 60px;
+    margin-top: 16px;
+}
+.logo a{
+    width: 270px;
+    height: 60px;
+    font-size: 36px;
+    display: block;
+    line-height: 60px;
+    color: #C81623;
+}
+.logo a span{
+    font-size: 18px;
+}
+
+.search{
+    width: 538px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.search input{
+    width: 442px;
+    height: 24px;
+    font-size: 16px;
+    color: rgb(153, 153, 153);
+    border-width: 2px 0 2px 2px;
+    border-color: #B61D1D;
+    border-style: solid;
+    padding:4px;
+    outline: none;
+}
+
+.search button{
+    width: 82px;
+    height: 36px;
+    background: #B61D22;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border:none;
+}
+
+.settleup{
+    width: 362px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.settleup .cw{
+    width: 75px;
+    height: 34px;
+    border: 1px solid #DFDFDF;
+    padding: 0 28px 0 36px;
+    background: #F9F9F9;
+    text-align: center;
+    line-height: 34px;
+}
+
+.settleup .cw a{
+    cursor: pointer;
+    color: #666;
+}
+.settleup .cw a:hover{
+    color: #C81623;
+}
+
+/*导航*/
+.nav{
+    padding-top: 40px;
+    height: 44px;
+    border-bottom: 2px solid #B1191A;
+}
+
+.nav .container{
+    height: 44px;
+}
+
+.navitems{
+    position: absolute;
+    width: 960px;
+    height: 44px;
+    top: 0px;
+    left: 210px;
+}
+.navitems ul li{
+    float: left;
+}
+.navitems ul li a{
+    display: block;
+    float: left;
+    line-height: 44px;
+    padding: 0 20px;
+    font-size: 16px;
+}
+.navitems ul li a:hover{
+    color: #C81623;
+}
+
+.categorys{
+    width: 210px;
+    height: 44px;
+    background: #B1191A;
+}
+
+.categorys a{
+    width: 190px;
+    height: 44px;
+    padding:0 10px;
+    display: block;
+    line-height: 44px;
+    font-size: 16px;
+    color: #fff;
+}
+.footer{
+    background: #F5F5F5;
+    height: 74px;
+}
+.trigger{
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    width:34px;
+    height: 35px;
+    background: #7a6e6e;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+}
+.trigger:hover{
+    cursor: pointer;
+    background: #c81623;
 }

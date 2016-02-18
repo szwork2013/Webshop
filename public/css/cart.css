@@ -1,0 +1,17 @@
+.cart{
+    padding: 20px 0;
+}
+.cart h3{
+    color: #e4393c;
+}
+.cart-ops{
+    
+}
+.cart-ops button{
+    width: 96px;
+    height: 52px;
+    background: #E54346;
+    border: none;
+    font-size: 26px;
+    color: #fff;
+}

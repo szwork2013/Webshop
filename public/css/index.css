@@ -1,0 +1,141 @@
+
+.dorpdown-layer{
+    width: 210px;
+    height: 465px;
+    background: #C81623;
+}
+.dorpdown-layer .item{
+    position: relative;
+    height: 31px;
+}
+
+.dorpdown-layer .active{
+    background: #fff;
+    color: #B61D1D;
+}
+
+.dorpdown-layer .item h3 a{
+    line-height: 31px;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 14px;
+}
+.dorpdown-layer .item i{
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    color: #fff;
+}
+.item-brands{
+    position: absolute;
+    left: 210px;
+    width: 960px;
+    height: 464px;
+    background: #fff;
+    margin-top: 2px;
+    display: none;
+    overflow: hidden;
+    z-index: 9;
+    border-right: 1px solid #C81623;
+    border-bottom: 1px solid #C81623;
+}
+.brands-inner{
+    padding: 10px 20px;
+}
+.brands-inner .fore h4{
+    color: #666;
+}
+.brands-inner .fore i{
+    padding-left: 6px;
+    padding-right: 12px;
+}
+.brands-inner .fore ul li{
+    float: left;
+    border-left: 1px solid #e0e0e0;
+    padding: 0 6px;
+}
+.slider{
+    position: relative;
+    width: 960px;
+    height: 465px;
+    margin-top: 2px;
+    overflow: hidden;
+}
+.slider ul li{
+    float: left;
+}
+.slider span{
+    position: absolute;
+    top: 424px;
+    left: 50%;
+    margin-left: -30px;
+}
+.slider span .active{
+    background: #C81623;
+    opacity: 1;
+}
+.slider span a{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: #3E3E3E;
+    border-radius: 50px;
+}
+
+.tab{
+    overflow: hidden;
+    padding-top: 20px;
+}
+.tab ul{
+    height: 36px;
+    border: solid 1px #ededed;
+    border-bottom: solid 1px #c81623;
+    z-index: -1;
+}
+.tab ul li{
+    line-height: 34px;
+    float: left;
+}
+.tab ul li a{
+    padding: 0 20px;
+    height: 34px;
+    display: block;
+    background: #fff;
+    
+}
+.tab ul li .active{
+    border-left: solid 1px #c81623;
+    border-right: solid 1px #c81623;
+    border-top: solid 3px #c81623;
+    z-index: 99;
+    
+}
+.tabs{
+    float: left;
+    padding: 10px 10px 10px 0;
+}
+.tabs img{
+    width: 160px;
+    height: 160px;
+}
+.tabs p{
+    width: 156px;
+    overflow: hidden;
+}
+.tabs p a:hover{
+    text-decoration: underline;
+}
+.tabs-price{
+    color: #999;
+}
+.tabs-price em{
+    font-size: 14px;
+    font-weight: 600;
+    color: #C00;
+}
+.tab .tabs-item1{
+    display: none;
+}
+.tab .active{
+    display: block;
+}
