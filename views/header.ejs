@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/<%- cssname %>.css">
+  </head>
+  <body>
+      <!--top-->
+    <div class="shortcut">
+        <div class="container">
+            <ul class="pull-left">
+                <li><a href="javascript:;">欢迎光临Shop!</a></li>
+            </ul>
+            <ul class="pull-right">
+                <% if(locals.user){%>
+                <li><a href="/user"><%- locals.user %>你好</a></li>
+                <li><a href="/logout">退出</a></li>
+                <% }else{%>
+                <li><a href="/login">你好，请登陆</a></li>
+                <li><a href="/reg">免费注册</a></li>
+                <% }%>
+                <li><a href="#">我的订单</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="logo pull-left">
+            <a href="/">Shop <span>node-express</span></a>
+        </div>
+        <div class="search pull-left">
+            <input class="pull-left" type="search">
+            <button class="pull-left">搜索</button>
+        </div>
+        <div class="settleup pull-right">
+            <div class="cw block-center">
+                <a class="text-center">我的购物车</a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>

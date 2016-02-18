@@ -6,8 +6,21 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
+// 后台
+var admin = require('./routes/admin');
+// 引入数据库相关
+var mongoose = require('mongoose');
+var session = require('express-session');
 
 var app = express();
+
+
+// 连接数据库
+mongoose.connect('mongodb://localhost:27017/shop');
+app.use(session({
+    secret: 'shop',
+    cookie:{maxAge: 60 * 1000 * 30}
+}))
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,6 +36,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // 首页入口
 index(app);
+
+// 后台入口
+admin(app);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
