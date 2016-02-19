@@ -20,22 +20,26 @@
     </div>
     <!--商品详情-->
     <div class="container">
+        <% data.forEach(function(data){%>
         <div class="layout">
             <div class="layout-img pull-left">
-                <img class="pro-gallery-img" src="" alt="">
+                <img class="pro-gallery-img" src="/<%= data.imgsrc%>" alt="">
             </div>
             <div class="pro-price pull-left">
-                <h1>华为 HUAWEI Mate 8 4GB+64GB版 全网通（香槟金）</h1>
-                <h3>年度旗舰新品，搭载麒麟950芯片，高性能与长续航的结合。</h3>
-                <p>价格：<b>¥ 3699.00</b></p>
+                <h1 class="sname"><%= data.name%></h1>
+                <h3 class="stitle"><%= data.nametitle%></h3>
+                <p>价格：<b>¥</b><b class="sprice"> <%= data.price%></b></p>
                 
-                <p>购买数量：<input type="number" name="points" min="1" max="99" value="1" /></p>
+                <p>购买数量：<input class="snum" type="number" name="points" min="1" max="99" value="1" /></p>
                 <p>
                     <a class="pro-btn" href="javascript:;">加入购物车</a>
                 </p>
             </div>
         </div>
-        <div class="pro-feature"></div>
+        <div class="pro-feature">
+            <%= data.content %>
+        </div>
+        <% })%>
     </div>
     <div class="clearfix"></div>
 <% include footer%>

@@ -2,9 +2,9 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/<%- cssname %>.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/<%- cssname %>.css">
   </head>
   <body>
       <!--top-->
@@ -21,7 +21,7 @@
                 <li><a href="/login">你好，请登陆</a></li>
                 <li><a href="/reg">免费注册</a></li>
                 <% }%>
-                <li><a href="#">我的订单</a></li>
+                <li><a href="/user">我的订单</a></li>
             </ul>
         </div>
     </div>
@@ -35,7 +35,7 @@
         </div>
         <div class="settleup pull-right">
             <div class="cw block-center">
-                <a class="text-center">我的购物车</a>
+                <a href="/cart" class="text-center">我的购物车</a>
             </div>
         </div>
     </div>

@@ -62,4 +62,65 @@ $(function(){
             scrollTop: 0 + 'px'
         },'slow')
     })
+    
+    $.get('/commodity', function (data){
+        $.each(data,function(i,j){
+            if(j.type == 0){
+                var html = '<div class="tabs"><a target="_blank" href="/page/'+j._id+'"><img src="'+j.imgsrc+'" alt=""></a><p><a target="_blank" href="/page/'+j._id+'">'+ j.name+'</a></p><p class="tabs-price">价格 <em>￥'+ j.price+'</em></p></div>';
+                $(".tab .item1").append(html);
+            }
+            if(j.type == 1){
+                html = '<div class="tabs"><a target="_blank" href="/page/'+j._id+'"><img src="'+j.imgsrc+'" alt=""></a><p><a target="_blank" href="/page/'+j._id+'">'+ j.name+'</a></p><p class="tabs-price">价格 <em>￥'+ j.price+'</em></p></div>';
+                $(".tab .item2").append(html);
+            }
+            if(j.type == 2){
+                html = '<div class="tabs"><a target="_blank" href="/page/'+j._id+'"><img src="'+j.imgsrc+'" alt=""></a><p><a target="_blank" href="/page/'+j._id+'">'+ j.name+'</a></p><p class="tabs-price">价格 <em>￥'+ j.price+'</em></p></div>';
+                $(".tab .item3").append(html);
+            }
+        })
+    })
+    
+    $(".pro-btn").on('click', function(){
+        var data = {
+            name: $('.sname').html(),
+            price: $('.sprice').html(),
+            num: $('.snum').val()
+        }
+        $.post('/addcart',data,function(success){
+            alert(success);
+            location.href = '/cart';
+        })
+    })
+    
+    var sum = 0;
+    $('.cart').find('.cartche').click(function(){
+        if($(this).is(':checked')){
+            sum += parseInt($(this).attr('data-price'));
+        }else{
+            sum -= $(this).attr('data-price');
+        }
+        $('.cart-price').html(sum + '.00');
+    })
+    
+    $('.cart-btn').on('click', function(){
+        var data = {
+            id: $('.cart-id').val(),
+            name: $('.p-name').html(),
+            num: $('.p-num').html(),
+            price: $('.cart-price').html()
+        }
+        if(!data.id){
+            alert('购物车里没有东西')
+            return ;
+        }
+        if(data.price <= 0){
+            alert('请选择商品')
+            return ;
+        }
+        $.post('/order',data, function (succcess){
+            alert(succcess);
+            location.href = '/user';
+        })
+    })
+    
 })

@@ -1,0 +1,29 @@
+<% include header %>
+   
+    <div class="container">
+        <span style="color:red"><%= locals.error %></span>
+       <div class="orders">
+           <div class="well">我的订单</div>
+       </div>
+       <div class="tab">
+           <table>
+               <tr>
+                   <th width="50">商品名称</th>
+                   <th width="200">商品价格</th>
+                   <th width="200">状态</th>
+                   <th width="40">操作</th>
+               </tr>
+               <% data.forEach(function(data){%>
+               <tr class="i">
+                   <td><%= data.name %></td>
+                   <td class="text-center">¥<%= data.price%>.00</td>
+                   <td class="text-center"><% if(data.status){%>已付款<% }else{%>未付款<%}%></td>
+                   <td class="text-center"><a class="paying" href="/paying/<%= data._id%>"><% if(data.status){%><% }else{%>付款<%}%></a> <a href="/delorder/<%= data._id%>">删除</a></td>
+                   
+               </tr>
+               <% }) %>
+           </table>
+       </div>
+    </div>
+    <div class="clearfix"></div>
+<% include footer %>

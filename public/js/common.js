@@ -16,14 +16,12 @@ $(function(){
 		});
 	}); 
 
-	/*ie6,7下拉框美化*/
-    if ( $.browser.msie ){
-    	if($.browser.version == '7.0' || $.browser.version == '6.0'){
-    		$('.select').each(function(i){
-			   $(this).parents('.select_border,.select_containers').width($(this).width()+5); 
-			 });
-    		
-    	}
-    }
+    
+    $.get('/commodity', function (data){
+        $.each(data,function(i,j){
+            var html = '<tr class="tr"><td class="td_center">'+j.name+'</td><td>￥'+j.price+'</td><td><a href="/admin/del/'+j._id+'">删除</a></td></tr>';
+            $("#tablebox").append(html);
+        })
+    })
  
 });

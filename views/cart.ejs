@@ -1,16 +1,25 @@
 <% include header %>
     <!--购物车-->
     <div class="container">
+        
         <div class="cart">
             <h3>全部商品</h3>
-            <input type="checkbox">
-            <img src="" alt="">
-            <span class="p-name">联想（ThinkPad）轻薄系列E550C（012CD ）15.6英寸笔记本电</span>
-            <span class="p-price">4999.00</span>
+            <% data.forEach(function(data){%>
+            <div>
+                <input class="cartche" data-price="<%= data.price%>" type="checkbox" name="chkItem" >
+                <img src="" alt="">
+                <span class="p-name"><%= data.name %></span>
+                数量：X<span class="p-num"><%= data.num %></span>
+                <span class="p-price">¥<%= data.price %></span>
+                <a href="/delcart/<%= data._id %>">删除</a>
+                <input class="cart-id" type="hidden" value="<%= data._id %>">
+            </div>
+            <% }) %>
         </div>
+        
         <div class="cart-ops pull-right">
-            <span>¥4599.00</span>
-            <button>结算</button>
+            ¥<span class="cart-price">0.00</span>
+            <button class="cart-btn">结算</button>
         </div>
     </div>
     <div class="clearfix"></div>
