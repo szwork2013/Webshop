@@ -3,7 +3,6 @@
 }
 .layout-img{
     width: 540px;
-    height: 410px;
 }
 .pro-price{
     width: 630px;
@@ -36,4 +35,9 @@
     line-height: 40px;
     text-align: center;
     color: #fff;
+}
+img.pro-gallery-img{
+    max-width: 540px;
+}
+.pro-feature{
 }

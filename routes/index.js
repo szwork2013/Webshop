@@ -20,7 +20,7 @@ module.exports = function(app){
     
     // 商品数据
     app.get('/commodity', function (req, res, next){
-        dbcommodity.find(function(err,data){
+        dbcommodity.find({},null,{sort:{_id:-1}},function(err,data){
             if(err){
                 console.log(err);
             }
