@@ -8,6 +8,8 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 // 后台
 var admin = require('./routes/admin');
+// mobile
+var mobile = require('./routes/mobile');
 // 引入数据库相关
 var mongoose = require('mongoose');
 var session = require('express-session');
@@ -36,6 +38,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // 首页入口
 index(app);
+
+// 手机页面
+mobile(app);
 
 // 后台入口
 admin(app);

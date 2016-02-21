@@ -68,7 +68,6 @@ module.exports = function(app){
         var form = new formidable.IncomingForm(); //创建上传表单
         form.uploadDir = 'public' + AVATAR_UPLOAD_FOLDER;	 //设置上传目录
         form.keepExtensions = true;	 //保留后缀
-        console.log(req.body.content)
         form.parse(req, function(err, fields, files){
             var imgsrc = files.imgSrc.path;
             var index = files.imgSrc.path.indexOf('avatar');
@@ -81,7 +80,6 @@ module.exports = function(app){
                 price: fields.price,
                 imgsrc: imgsrc
             }
-            console.log(req.body.content)
             dbcommodity.create(dataPost,function (err,doc){
                 if(err){
                     console.log(err)
