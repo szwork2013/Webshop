@@ -42,7 +42,6 @@ header{
     padding-left: 5%;
 }
 .region-search{
-	margin-top: 4px;
 	width: 100%;
 	outline: none;
 	border:none;
@@ -120,4 +119,44 @@ header{
 }
 .shopcom-img{
 	padding-bottom: 2rem;
+}
+.nav-left{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0%;
+    height: 100%;
+    background: #333;
+    z-index: 99;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    overflow: hidden;
+}
+#mobile-main{
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+#mobile-main.active{
+    transform: translate3d(60%,0px,0px);
+}
+.nav-item{
+    font-size: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem 1rem 2rem;
+    
+}
+.nav-item li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #8E8B8B;
+}
+.nav-item li a{
+    display: block;
+    min-width: 5rem;
+    overflow: hidden;
+    color: #ACACAC;
+    text-decoration: none;
 }

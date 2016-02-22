@@ -1,0 +1,28 @@
+<% include header %>
+        <header>
+            <div class="header-ico-f pull-left">
+                <a href="javascript:history.go(-1);"><i class="glyphicon glyphicon-menu-left"></i></a>
+            </div>
+            <div class="header-title center-block text-center">
+                登录
+            </div>
+        </header>
+        <div style="padding-top: 20px;">
+        	
+        </div>
+        <form action="/login" method="POST" role="form">
+        
+        	<div class="container-fluid">
+        		<div class="form-group">
+	        		<input type="text" name="username" class="form-control" id="" placeholder="请输入用户名">
+	        	</div>
+	        	<div class="form-group">
+	        		<input type="password" name="password" class="form-control" id="" placeholder="请输入密码">
+	        	</div>
+	        	<button type="submit" class="btn btn-primary">登录</button>
+	        	<span>没有账号？</span><a href="/mobile/reg" class="btn btn-success">注册</a>
+        	</div>
+        
+        	
+        </form>
+<% include footer %>

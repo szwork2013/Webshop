@@ -1,0 +1,77 @@
+header{
+    position: relative;
+    background: #efefef;
+    min-height: 4.4rem;
+    border-bottom: 1px solid #ccc;
+    box-shadow:1px 2px 12px #ccc;
+}
+.header-ico-f{
+    padding-left: 1rem;
+    position: absolute;
+    line-height: 4.4rem;
+    font-size: 2.2rem;
+    z-index: 9;
+}
+.header-ico-f a{
+    color: #999;
+}
+.header-title{
+    position: absolute;
+    width: 100%;
+    font-size: 22px;
+    line-height: 4.4rem;
+    max-height: 4.4rem;
+}
+.page-content{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.page-name{
+    padding:10px 0 10px 0;
+}
+.page-title{
+    font-size: 12px;
+    color: #848689;
+}
+.page-price{
+    color: #f15353;
+    font-size: 20px;
+}
+.page-num{
+    
+    color: #848689;
+}
+.nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+.nav-left{
+    padding:0 20px;
+    z-index: 9;
+    width: 50%;
+    background-color: rgba(0,0,0,.8);  
+}
+.nav-ico{
+    color: #ccc;
+    z-index: 99;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+}
+.nav-ico p{
+    font-size: 12px;
+}
+.nav-scart{
+    width: 50%;
+    height: 50px;
+    background: #f15353;
+}
+.nav-scart a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+}
