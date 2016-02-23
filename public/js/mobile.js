@@ -22,7 +22,7 @@ $(function(){
     
     $.get("/commodity",function(data){
         $.each(data,function(i,j){
-            var html = '<div class="col-xs-6"><div class="shopcom-img"><img src="'+j.imgsrc+'" class="img-responsive" alt=""><a href="/mobile/page/'+j._id+'" class="shopcom-name">'+j.name+'</a></div></div>';
+            var html = '<div class="col-xs-6"><div class="shopcom-img"><img src="/'+j.imgsrc+'" class="img-responsive" alt=""><a href="/mobile/page/'+j._id+'" class="shopcom-name">'+j.name+'</a></div></div>';
             $(".shopcom-m").append(html);
         })
     })
