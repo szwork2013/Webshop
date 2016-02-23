@@ -1,4 +1,13 @@
 <% include header %>
+<script>
+    var index = window.location.href.indexOf('/page');
+    var url = '/mobile'+ window.location.href.substr(index,window.location.href.length);
+    if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+            location.href = url;
+    }else{
+        
+    }
+    </script>
     <!--导航-->
     <div class="nav">
         <div class="container">
@@ -43,4 +52,5 @@
         <% })%>
     </div>
     <div class="clearfix"></div>
+    
 <% include footer%>

@@ -1,4 +1,5 @@
 <% include header %>
+
         <nav class="nav">
             <div class="pull-left nav-left">
                 <div class="nav-ico pull-left text-left">
@@ -22,14 +23,16 @@
                 商品
             </div>
         </header>
+        <% data.forEach(function(data){%>
         <div class="page-content">
-            <img class="center-block" src="/images/10.jpg" alt="">
-            <h4 class="page-name">二手苹果6/plus iphone6/plus 原装极品成色，杜绝翻新，支持检测</h4>
-            <p class="page-title">二手苹果6/plus iphone6/plus 原装极品成色</p>
-            <div class="page-price">¥ <span>3999</span></div>
+            <img class="center-block" src="/<%= data.imgsrc%>" alt="">
+            <h4 class="page-name"><%= data.name%></h4>
+            <p class="page-title"><%= data.nametitle%></p>
+            <div class="page-price">¥ <span class="sprice"><%= data.price%></span></div>
             <div class="page-num">
-                数量：<input type="number" min="1" max="100" value="1">
+                数量：<input class="snum" type="number" min="1" max="100" value="1">
             </div>
         </div>
+        <% })%>
         <div style="padding-top:50px;"></div>
 <% include footer %>

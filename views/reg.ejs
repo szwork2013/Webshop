@@ -1,5 +1,11 @@
 <% include header %>
-   
+   <script>
+        if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+                
+        }else{
+            location.href = '/mobile/reg';
+        }
+        </script>
     <!--注册-->
     <div class="container">
         <span style="color:red"><%= locals.error %></span>

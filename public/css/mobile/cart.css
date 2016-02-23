@@ -22,3 +22,47 @@ header{
     line-height: 4.4rem;
     max-height: 4.4rem;
 }
+.cart-img img{
+    width: 80px;
+    height: 80px;
+}
+.cart-test{
+    padding-left: 20px;
+    width: 67%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+.nav-left{
+    padding:0 20px;
+    z-index: 9;
+    width: 50%;
+    height: 50px;
+    background-color: rgba(0,0,0,.8);  
+}
+.nav-ico{
+    color: #ccc;
+    z-index: 99;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+    line-height: 50px;
+}
+.nav-ico p{
+    font-size: 12px;
+}
+.nav-scart{
+    width: 50%;
+    height: 50px;
+    background: #f15353;
+}
+.nav-scart a{
+    text-decoration: none;
+    color: #fff;
+    line-height: 50px;
+}

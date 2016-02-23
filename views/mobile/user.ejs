@@ -1,20 +1,10 @@
 <% include header %>
-        <nav class="nav">
-            <div class="pull-left nav-left">
-                <div class="nav-ico text-center">
-                    <p>合计：¥ <span class="cart-price">0</span></p>
-                </div>
-            </div>
-            <div class="pull-right nav-scart text-center">
-                <a id="cart-btn" class="cart-btn m">结算</a>
-            </div>
-        </nav>
         <header>
             <div class="header-ico-f pull-left">
-                <a href="javascript:history.go(-1);"><i class="glyphicon glyphicon-menu-left"></i></a>
+                <a href="javascript:location.href='/';"><i class="glyphicon glyphicon-menu-left"></i></a>
             </div>
             <div class="header-title center-block text-center">
-                购物车
+                我的订单
             </div>
         </header>
         <div style="padding-top: 20px;">
@@ -23,9 +13,6 @@
         <div class="container-fluid">
             <% data.forEach(function(data){%>
             <div class="cart-c">
-                <div class="check-btn pull-left" >
-                    <input class="cart-check" data-price="<%= data.price %>" type="checkbox" name="" value="">
-                </div>
                 <div class="cart-img pull-left">
                     <img src="<%= data.img%>" alt="暂时没有图片">
                 </div>
@@ -33,7 +20,8 @@
                     <p class="cart-name"><%= data.name %></p>
                     数量：X<span class="p-num"><%= data.num %></span>
                     <p class="cart-price">¥ <%= data.price %></p>
-                    <p><a href="/delcart/<%= data._id %>">删除</a></p>
+                    <td class="text-center"><% if(data.status){%>已付款<% }else{%>未付款<%}%></td>
+                    <p><a class="paying" href="/paying/<%= data._id%>"><% if(data.status){%><% }else{%>付款<%}%></a> <a href="/delorder/<%= data._id %>">删除订单</a></p>
                     <input class="cart-id" type="hidden" value="<%= data._id %>">
                 </div>
             </div>
@@ -44,7 +32,7 @@
             if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
                 
             }else{
-                location.href = '/cart';
+                location.href = '/user';
             }
         </script>
 <% include footer %>

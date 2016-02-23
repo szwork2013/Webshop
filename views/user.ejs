@@ -1,5 +1,11 @@
 <% include header %>
-   
+   <script>
+        if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+                location.href = '/mobile/user';
+        }else{
+            
+        }
+        </script>
     <div class="container">
         <span style="color:red"><%= locals.error %></span>
        <div class="orders">

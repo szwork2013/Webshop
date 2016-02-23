@@ -1,4 +1,11 @@
 <% include header %>
+<script>
+        if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+                
+        }else{
+            location.href = '/login';
+        }
+        </script>
         <header>
             <div class="header-ico-f pull-left">
                 <a href="javascript:history.go(-1);"><i class="glyphicon glyphicon-menu-left"></i></a>
@@ -25,4 +32,5 @@
         
         	
         </form>
+        
 <% include footer %>

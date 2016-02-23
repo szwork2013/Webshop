@@ -1,5 +1,11 @@
 <% include header %>
-   
+   <script>
+        if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+                location.href = '/mobile/login';
+        }else{
+            
+        }
+        </script>
     <!--注册-->
     <div class="container">
         <span style="color:red"><%= locals.error %></span>
@@ -20,4 +26,5 @@
        </div>
     </div>
     <div class="clearfix"></div>
+    
 <% include footer %>

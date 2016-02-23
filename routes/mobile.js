@@ -1,5 +1,6 @@
 var dbcommodity = require('../model/commodity');
 var dbscart = require('../model/scart');
+var dborder = require('../model/order'); 
 module.exports = function (app){
     // mobile index
     app.get('/mobile/', function (req, res, next){
@@ -19,7 +20,7 @@ module.exports = function (app){
     // mobile cart
     app.get('/mobile/cart', function (req, res, next){
         if(!req.session.user){
-            res.redirect('/login');
+            res.redirect('/mobile/login');
         }
         dbscart.find({user:req.session.user}, function (err,data){
             if(err){
@@ -37,5 +38,15 @@ module.exports = function (app){
     // mobile reg
     app.get('/mobile/reg', function (req, res, next){
         res.render('mobile/reg',{title: 'reg', css:'reg'})
+    })
+    
+    // mobile user
+    app.get('/mobile/user', function (req, res, next){
+        if(!req.session.user){
+            res.redirect('/mobile/login');
+        }
+        dborder.find({},null,{sort:{_id:-1}},function(err,data){
+            res.render('mobile/user',{title: '个人中心', css:'cart', data:data});
+        })
     })
 }
